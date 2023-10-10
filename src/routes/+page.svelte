@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Features from "../lib/components/features.svelte";
+	import Feedbacks from "../lib/components/feedbacks.svelte";
+	import Hero from "../lib/components/hero.svelte";
+	import Interests from "../lib/components/interests.svelte";
+	import Property from "../lib/components/property.svelte";
+
+</script>
+
+<main>
+    <Hero />
+    <Property />
+    <Features />
+    <Feedbacks />
+    <Interests />
+</main>
+
+<style lang="postcss">
+
+</style>
