@@ -1,5 +1,6 @@
 <script>
 	import CircleIcon from './circle_icon.svelte';
+	import PageEllipses from './page_ellipses.svelte';
 	import Pagination from './pagination.svelte';
 
 </script>
@@ -31,7 +32,7 @@
 		</div>
 	</div>
     <div class="w-fit m-auto">
-        <Pagination />
+        <PageEllipses />
     </div>
 </section>
 

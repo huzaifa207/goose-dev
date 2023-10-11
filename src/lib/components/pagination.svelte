@@ -1,32 +1,24 @@
 <script>
-    let pages = [1,2,3,4,5].sort((a,b) => b-a)
-    console.log(pages);
+	import PageEllipses from './page_ellipses.svelte';
+	import LeftArrow from './svg/left_arrow.svelte';
+	import RightArrow from './svg/right_arrow.svelte';
+
+	export let style_;
 </script>
-<div class="flex items-center gap-1">
-    {#each pages as page}
-        <div class="ellipse w{page}">
-            
-        </div>
-    {/each}
+
+<div class="hidden md:flex justify-center items-center gap-4 pt-3 {style_} font-inter ">
+	<button class="icon-container" disabled>
+		<LeftArrow /> Previous Property
+	</button>
+
+	<PageEllipses />
+	<button class="icon-container">
+		Next Property <RightArrow />
+	</button>
 </div>
 
 <style lang="postcss">
-    .ellipse {
-        @apply rounded-full bg-qoutes aspect-square 
-    }
-    .w5 {
-        width: 11px;
-    }
-    .w4 {
-        width: 9px;
-    }
-    .w3 {
-        width: 7px;
-    }
-    .w2 {
-        width: 5px;
-    }
-    .w1 {
-        width: 3px;
-    }
+	button {
+		@apply bg-qoutes rounded-full text-sm font-medium tracking-wider w-max py-2 px-4 disabled:opacity-50;
+	}
 </style>

@@ -8,6 +8,7 @@
     html {
         font-family: 'Raleway', sans-serif;
         scroll-behavior: smooth;
+        scroll-padding-top: 4rem;
     }
 
     header {
@@ -21,6 +22,11 @@
     .section {
         @apply px-2 lg:px-8 py-6 lg:py-10
     }
+
+    .section-prop {
+        @apply h-full px-8 lg:px-16 py-3 lg:py-6
+    }
+
 }
 
 @layer components {
@@ -31,10 +37,21 @@
     .circle-btn-container {
         @apply h-6 lg:h-8 aspect-square rounded-full bg-white flex justify-center items-center cursor-pointer
     }
+
+    .call-component {
+        @apply flex gap-3 items-center font-medium;
+    }
+
+	.call-component > button{
+		@apply px-4 py-2 text-white bg-black rounded-full font-semibold;
+	}
 }
 
 @layer utilities {
     .font-inter {
         font-family: 'Inter', sans-serif;
+    }
+    .font-raleway {
+        font-family: 'Raleway', sans-serif;
     }
 }

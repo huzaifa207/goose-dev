@@ -9,11 +9,19 @@ export default {
         section: '#002661',
         fieldsBg: "#EEEEEE",
         fieldText: "#606060",
-        qoutes: "#DDDDDD"
+        qoutes: "#DDDDDD",
+        selected: "#002661",
+        secondaryBg: "#F4F4F4",
+        subheading: "#333333",
+        statusBox: "#009028",
+        orange_: "#FFB774",
+        blue_: "#47A7FF",
+        green_: "#85E3AC"
       },
       backgroundImage: {
         'hero-pattern': "url('/hero.png')",
-        'hero-pattern-mob': "url('/mob-hero.png')"
+        'hero-pattern-mob': "url('/mob-hero.png')",
+        'map-small': "url(/map-small.png)"
       },
       lineHeight: {
         12: '4rem'
@@ -39,7 +47,7 @@ export default {
         "w3": "7px",
         "w2": "5px",
         "w1": "3px"
-      }
+      },
     },
   },
   plugins: [],
