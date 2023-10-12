@@ -187,7 +187,7 @@
         
         <div class="hidden lg:flex flex-1 flex-col gap-2">
             <h3 class="footer-h3">Sitemap</h3>
-            <a href="/">About us</a>
+            <a href="/about">About us</a>
             <a href="/">Get in touch</a>
         </div>
         <div class="hidden lg:flex flex-3 flex-col gap-2">

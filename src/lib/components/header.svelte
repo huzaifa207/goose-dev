@@ -168,7 +168,7 @@
 		</div>
 		<nav class="pages-container">
 			<a href="/property" aria-current={active_page === '/property'} class="pages">Properties</a>
-			<a href="#" class="pages">About us</a>
+			<a href="/about" aria-current={active_page === '/about'} class="pages">About us</a>
 			<a href="#" class="pages">Get in touch</a>
 			<a href="#" class="pages">Login</a>
 		</nav>
